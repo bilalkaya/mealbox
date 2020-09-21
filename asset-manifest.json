@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mealbox/static/css/main.5f361e03.chunk.css",
+    "main.js": "/mealbox/static/js/main.99607146.chunk.js",
+    "main.js.map": "/mealbox/static/js/main.99607146.chunk.js.map",
+    "runtime-main.js": "/mealbox/static/js/runtime-main.d56f40b6.js",
+    "runtime-main.js.map": "/mealbox/static/js/runtime-main.d56f40b6.js.map",
+    "static/js/2.9b43bf7d.chunk.js": "/mealbox/static/js/2.9b43bf7d.chunk.js",
+    "static/js/2.9b43bf7d.chunk.js.map": "/mealbox/static/js/2.9b43bf7d.chunk.js.map",
+    "index.html": "/mealbox/index.html",
+    "precache-manifest.4e8ce0db79febbf70a301c8f3aa8e340.js": "/mealbox/precache-manifest.4e8ce0db79febbf70a301c8f3aa8e340.js",
+    "service-worker.js": "/mealbox/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/mealbox/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.9b43bf7d.chunk.js.LICENSE.txt": "/mealbox/static/js/2.9b43bf7d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/mealbox/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d56f40b6.js",
+    "static/js/2.9b43bf7d.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.99607146.chunk.js"
+  ]
+}
