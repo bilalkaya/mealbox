@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/mealbox/static/js/main.9749e7c0.chunk.js",
-    "main.js.map": "/mealbox/static/js/main.9749e7c0.chunk.js.map",
+    "main.js": "/mealbox/static/js/main.71f5d086.chunk.js",
+    "main.js.map": "/mealbox/static/js/main.71f5d086.chunk.js.map",
     "runtime-main.js": "/mealbox/static/js/runtime-main.d56f40b6.js",
     "runtime-main.js.map": "/mealbox/static/js/runtime-main.d56f40b6.js.map",
-    "static/js/2.5e0ba982.chunk.js": "/mealbox/static/js/2.5e0ba982.chunk.js",
-    "static/js/2.5e0ba982.chunk.js.map": "/mealbox/static/js/2.5e0ba982.chunk.js.map",
+    "static/js/2.3bd82f48.chunk.js": "/mealbox/static/js/2.3bd82f48.chunk.js",
+    "static/js/2.3bd82f48.chunk.js.map": "/mealbox/static/js/2.3bd82f48.chunk.js.map",
     "index.html": "/mealbox/index.html",
-    "precache-manifest.26f9ea87426b8880a9000b52738b6552.js": "/mealbox/precache-manifest.26f9ea87426b8880a9000b52738b6552.js",
+    "precache-manifest.fdec08c2e71c566a738e6cc3217b586c.js": "/mealbox/precache-manifest.fdec08c2e71c566a738e6cc3217b586c.js",
     "service-worker.js": "/mealbox/service-worker.js",
-    "static/js/2.5e0ba982.chunk.js.LICENSE.txt": "/mealbox/static/js/2.5e0ba982.chunk.js.LICENSE.txt"
+    "static/js/2.3bd82f48.chunk.js.LICENSE.txt": "/mealbox/static/js/2.3bd82f48.chunk.js.LICENSE.txt",
+    "static/media/logo.jpg": "/mealbox/static/media/logo.8f27f5c5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d56f40b6.js",
-    "static/js/2.5e0ba982.chunk.js",
-    "static/js/main.9749e7c0.chunk.js"
+    "static/js/2.3bd82f48.chunk.js",
+    "static/js/main.71f5d086.chunk.js"
   ]
 }
