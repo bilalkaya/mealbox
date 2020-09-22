@@ -9,6 +9,7 @@ function App() {
   const [mainMenu, setMainMenu] = useState([]);
   const [isSelected, setIsSelected] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState([]);
+  const [selectedModal, setSelectedModal] = useState({});
 
   useEffect(() => {
     setAllMenu(menu.menus);
@@ -32,12 +33,22 @@ function App() {
     setSelectedMenu(mainMenu[0]);
   };
 
+  const selectedModalMenu = (e, index) => {
+    e.preventDefault();
+    const curModal = selectedMenu.items[index];
+    setSelectedModal(curModal);
+    console.log(curModal);
+  };
+
   return (
     <>
       <Header showMainMenu={showMainMenu} showDiscountMenu={showDiscountMenu} />
       <div className="container mt-3">
         {isSelected ? (
-          <SelectedMenu menu={selectedMenu} />
+          <SelectedMenu
+            menu={selectedMenu}
+            selectedModalMenu={selectedModalMenu}
+          />
         ) : (
           <MainMenu mainMenu={mainMenu} selectMenu={selectMenu} />
         )}

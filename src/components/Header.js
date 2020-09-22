@@ -3,11 +3,11 @@ import React from "react";
 const Header = ({ showMainMenu, showDiscountMenu }) => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark"
+      className="navbar navbar-expand-lg navbar-dark sticky-top"
       style={{ backgroundColor: "#000" }}
     >
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/mealbox">
           <img
             src={process.env.PUBLIC_URL + "/images/logo.jpg"}
             width="180px"
