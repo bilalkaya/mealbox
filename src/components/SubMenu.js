@@ -24,18 +24,3 @@ const SubMenu = ({ subMenus }) => {
 };
 
 export default SubMenu;
-
-// {subMenus.forEach((item) => (
-//     <div>
-//       <div className="col col-md-4 col-lg-4">
-//         <label forhtml="exampleFormControlSelect1">{item.desc}</label>
-//       </div>
-//       <div className="col col-md-4 col-lg-2">
-//         <select className="form-control" id="exampleFormControlSelect1">
-//           {item.menu.map((item2, index) => (
-//             <option key={index}>{item2}</option>
-//           ))}
-//         </select>
-//       </div>
-//     </div>
-//   ))}
