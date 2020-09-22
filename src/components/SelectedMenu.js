@@ -1,7 +1,7 @@
 import React from "react";
 import SelectedMenuItem from "./SelectedMenuItem";
 
-const SelectedMenu = ({ menu, selectedModalMenu }) => {
+const SelectedMenu = ({ menu, selectedModalMenu, selectedModal, subMenus }) => {
   return (
     <>
       <div className="row justify-content-center my-3">
@@ -11,6 +11,8 @@ const SelectedMenu = ({ menu, selectedModalMenu }) => {
             <SelectedMenuItem
               menu={menu}
               selectedModalMenu={selectedModalMenu}
+              selectedModal={selectedModal}
+              subMenus={subMenus}
             />
           </div>
         </div>

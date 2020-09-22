@@ -1,7 +1,12 @@
 import React from "react";
 import ModalMenu from "./ModalMenu";
 
-const SelectedMenuItem = ({ menu, selectedModalMenu }) => {
+const SelectedMenuItem = ({
+  menu,
+  selectedModalMenu,
+  selectedModal,
+  subMenus,
+}) => {
   return (
     <>
       <ul className="list-group list-group-flush">
@@ -33,7 +38,7 @@ const SelectedMenuItem = ({ menu, selectedModalMenu }) => {
           </li>
         ))}
       </ul>
-      <ModalMenu />
+      <ModalMenu selectedModal={selectedModal} subMenus={subMenus} />
     </>
   );
 };

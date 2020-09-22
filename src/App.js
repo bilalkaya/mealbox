@@ -9,7 +9,8 @@ function App() {
   const [mainMenu, setMainMenu] = useState([]);
   const [isSelected, setIsSelected] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState([]);
-  const [selectedModal, setSelectedModal] = useState({});
+  const [selectedModal, setSelectedModal] = useState([]);
+  const [subMenus, setSubMenus] = useState([]);
 
   useEffect(() => {
     setAllMenu(menu.menus);
@@ -37,7 +38,21 @@ function App() {
     e.preventDefault();
     const curModal = selectedMenu.items[index];
     setSelectedModal(curModal);
-    console.log(curModal);
+    findSubMenus(curModal.subMenus);
+  };
+
+  const findSubMenus = (keys) => {
+    const submenus = [];
+    if (keys) {
+      keys.forEach((item) => {
+        allMenu.forEach((item2) => {
+          if (item === item2.key) {
+            submenus.push({ desc: item2.description, menu: item2.items });
+          }
+        });
+      });
+    }
+    setSubMenus(submenus);
   };
 
   return (
@@ -48,6 +63,8 @@ function App() {
           <SelectedMenu
             menu={selectedMenu}
             selectedModalMenu={selectedModalMenu}
+            selectedModal={selectedModal}
+            subMenus={subMenus}
           />
         ) : (
           <MainMenu mainMenu={mainMenu} selectMenu={selectMenu} />
