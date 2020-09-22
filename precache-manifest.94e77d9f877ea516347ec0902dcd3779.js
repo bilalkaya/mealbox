@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4fc7125f6cbe453d4713f726f40495e",
+    "revision": "67b81e3b75c145910452cca3b89c3844",
     "url": "/mealbox/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mealbox/static/js/2.22c3914d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "30e29591d3004f547508",
-    "url": "/mealbox/static/js/main.7e2225f6.chunk.js"
+    "revision": "b6c8b294748ebc647097",
+    "url": "/mealbox/static/js/main.71c16a18.chunk.js"
   },
   {
     "revision": "d52f2d0d8b0dd288c5d4",
