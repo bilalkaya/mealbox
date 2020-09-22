@@ -1,48 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import MainMenu from "./components/MainMenu";
+import SelectedMenu from "./components/SelectedMenu";
 import menu from "./menu.yaml";
-import logo from "./images/logo.jpg";
 
 function App() {
-  console.log(menu.menus);
+  const [allMenu, setAllMenu] = useState([]);
+  const [mainMenu, setMainMenu] = useState([]);
+  const [isSelected, setIsSelected] = useState(false);
+  const [selectedMenu, setSelectedMenu] = useState([]);
+
+  useEffect(() => {
+    setAllMenu(menu.menus);
+    setMainMenu(menu.menus[0].items);
+  }, []);
+
+  const selectMenu = (e, index) => {
+    e.preventDefault();
+    setIsSelected(true);
+    setSelectedMenu(mainMenu[index]);
+  };
+
+  const showMainMenu = (e) => {
+    e.preventDefault();
+    setIsSelected(false);
+  };
+
+  const showDiscountMenu = (e) => {
+    e.preventDefault();
+    setIsSelected(true);
+    setSelectedMenu(mainMenu[0]);
+  };
+
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark"
-      style={{ backgroundColor: "#000" }}
-    >
-      <div className="container">
-        <a className="navbar-brand" href="/#">
-          <img src={logo} width="180px" alt="mealbox logo" loading="lazy" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="/#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/#">
-                Ana Yemekler
-              </a>
-            </li>
-          </ul>
-        </div>
+    <>
+      <Header showMainMenu={showMainMenu} showDiscountMenu={showDiscountMenu} />
+      <div className="container mt-3">
+        {isSelected ? (
+          <SelectedMenu menu={selectedMenu} />
+        ) : (
+          <MainMenu mainMenu={mainMenu} selectMenu={selectMenu} />
+        )}
       </div>
-    </nav>
+    </>
   );
 }
 
